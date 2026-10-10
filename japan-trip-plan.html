@@ -139,6 +139,16 @@
   details.more .rule, details.more .note { margin-top: 8px; }
   details.more .rule:first-of-type, details.more .note:first-of-type { margin-top: 8px; }
 
+  details.appendix { margin-top: 24px; border-top: 2px solid var(--border); padding-top: 4px; }
+  details.appendix > summary {
+    cursor: pointer; list-style: none; user-select: none;
+    font-size: 1.05rem; font-weight: 700; color: var(--text);
+    padding: 14px 0;
+  }
+  details.appendix > summary::-webkit-details-marker { display: none; }
+  details.appendix > summary::before { content: "▸ "; color: var(--accent); }
+  details.appendix[open] > summary::before { content: "▾ "; }
+
   footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
   a { color: var(--accent); }
 
@@ -162,7 +172,7 @@
 
 <header>
   <h1>Japan — 23 Oct to 9 Nov</h1>
-  <div class="sub">7 guys. Group plan + solo windows. Nothing booked yet — the timeline below is what to reserve and when.</div>
+  <div class="sub">5 from Oct 23, down to 4 from Nov 1. Group plan + solo windows. Nothing booked yet — the timeline below is what to reserve and when.</div>
 </header>
 
 <h2>Booking timeline</h2>
@@ -170,13 +180,14 @@
 <div class="scroll">
 <table>
   <tr><th>By when</th><th>What</th><th>Why / notes</th></tr>
-  <tr><td><strong>Now</strong></td><td><strong>Solaniwa Onsen</strong> <span class="what">bathhouse</span> — Sat 24, 18:00</td><td>1 Tatami + 1 Standard, same 90-min slot. Only two tatami rooms exist. Book online. Weekend pricing likely higher than the weekday figure quoted in the day card</td></tr>
-  <tr><td><strong>Now</strong></td><td><strong>Experience KENDO</strong> <span class="what">activity / dojo</span>, Kyoto Budo Center — Wed 28</td><td>These average 29 days of advance booking. 2h: history lecture, armour, basic strikes, sparring matches. Via Viator, search "Experience KENDO Kyoto"</td></tr>
-  <tr><td><strong>Now</strong></td><td><strong>Tsumago ryokan</strong> <span class="what">accommodation</span> — Fri 30 night</td><td>Small inns, one party a night, no online booking platform. Try JapaneseGuesthouses.com or call Matsushiroya direct: +81 264 57 3022. Confirm cash-only and that they take 7–8</td></tr>
-  <tr><td><strong>Oct 5</strong></td><td><strong>KADEN</strong> <span class="what">restaurant</span> — Mon 26 dinner</td><td>Hard deadline Oct 23 (3 days), but a private room for 7 needs more notice. 06-6301-6133</td></tr>
-  <tr><td><strong>Oct 10</strong></td><td><strong>5W Wagyu</strong> <span class="what">restaurant</span> — Wed 28 dinner, Kawaramachi</td><td>Halal wagyu steak. TableCheck booking, which matters for 7</td></tr>
+  <tr><td><strong>Now</strong></td><td><strong>Solaniwa Onsen</strong> <span class="what">bathhouse</span> — Sat 24, 18:00</td><td>1 Deluxe Tatami room (up to 6) covers all 5. Book online. Weekend pricing likely higher than the weekday figure quoted in the day card</td></tr>
+  <tr><td><strong>Now</strong></td><td><strong>Experience KENDO</strong> <span class="what">activity / dojo</span>, Kyoto Budo Center — Tue 27</td><td>~$117/person × 5 ≈ $585. On GetYourGuide or Viator, free cancellation up to 24h. Also on TripAdvisor Experiences. 2h: history lecture, armour, basic strikes, sparring matches</td></tr>
+  <tr><td><strong>Oct 10</strong></td><td><strong>Kyoto Diner</strong> <span class="what">restaurant</span> — Tue 27 dinner, Nakagyo</td><td>Book ahead for 5. +81 75-202-7788</td></tr>
   <tr><td><strong>Oct 10</strong></td><td><strong>Shibuya Sky</strong> <span class="what">observation deck</span> — Fri 23, 19:00 slot</td><td>Timed entry, sells out days ahead. Book as soon as the date is live</td></tr>
   <tr><td><strong>Check</strong></td><td><strong>Shimokita Halloween '26</strong> <span class="what">party</span> — Sat 31 night</td><td>Ticket via official site + separate ¥600 cash-only drink fee at the door. Entry details still need confirming</td></tr>
+  <tr><td><strong>Closer to date</strong></td><td><strong>Tobu Limited Express</strong> <span class="what">train</span> — Fri 30, Nikko day trip, <strong>round trip</strong></td><td>Reserved seating both ways, not walk-on. Book the 07:00–07:30 departure and the ~17:00 return so all 5 sit together on each leg. Tobu's own site or ticket counter at Asakusa. Everything else in Nikko (shrine, bus, falls, lunch) is pay-on-arrival, nothing else to book</td></tr>
+  <tr><td><strong>Now</strong></td><td><strong>teamLab Borderless</strong> <span class="what">digital art museum</span> — Sat 31, 14:00</td><td>Timed entry, sells out especially on Saturdays. ¥3,800–4,800. Book on the official teamLab site or Klook. Confirm 5 in one slot</td></tr>
+  <tr><td><strong>Now</strong></td><td><strong>Gonpachi Nishi-Azabu</strong> <span class="what">restaurant</span> — Sat 31, 20:00</td><td>The Kill Bill restaurant. Book at gonpachi.jp/nishi-azabu/ (English) or +81 3-5771-0170. Saturday — book at least a few days ahead</td></tr>
   <tr><td>Week before</td><td>Visit Japan Web, Suica/Pasmo, eSIM</td><td>Not bookings, but don't leave them to the airport</td></tr>
 </table>
 </div>
@@ -187,9 +198,7 @@
 </ul>
 <h3>Ask on each call</h3>
 <ul>
-  <li><strong>Solaniwa</strong> — both rooms same slot Sat 24? Which ticket-date tier (A–E) applies?</li>
-  <li><strong>KADEN</strong> — open Mondays? Private room for 7? Current price on the ¥7,000 course?</li>
-  <li><strong>Matsushiroya</strong> — cash only? Can they take 7–8? Dinner/breakfast included?</li>
+  <li><strong>Solaniwa</strong> — one Tatami room, Sat 24, 18:00? Which ticket-date tier (A–E) applies?</li>
   <li>Cancellation terms on all of the above — they vary a lot</li>
 </ul>
 <p class="rule">Tankuma (Kyoto kaiseki, still a maybe) and Kyudo's new day, if it gets one, would add further bookings. Nov 1–8 Tokyo has none yet.</p>
@@ -228,58 +237,49 @@
   <table>
     <tr><td class="time">Morning</td><td>Shinkansen, Tokyo → Osaka, ~2.5h + station time</td></tr>
     <tr><td class="time">Early–mid afternoon <span class="tag t-free">Free</span></td><td class="suggestions"><strong>Ideas:</strong> Osaka Castle <span class="what">castle</span> + park, Umeda Sky Building <span class="what">observation deck</span>, Shinsaibashi <span class="what">shopping arcade</span> / Amerikamura <span class="what">shopping district</span>, Den Den Town <span class="what">electronics district</span>, Nakazakicho <span class="what">cafe district</span></td></tr>
-    <tr><td class="time">18:00–19:30</td><td><strong>Solaniwa Onsen</strong> <span class="what">bathhouse</span> <span class="tag t-open">To book</span> — 1 Deluxe Tatami (up to 6) + 1 Standard (up to 4), 90 min. Last entry is 20:00, so this is close to the latest a full session can run</td></tr>
+    <tr><td class="time">18:00–19:30</td><td><strong>Solaniwa Onsen</strong> <span class="what">bathhouse</span> <span class="tag t-open">To book</span> — 1 Deluxe Tatami room (up to 6), covers all 5, 90 min. Last entry is 20:00, so this is close to the latest a full session can run</td></tr>
     <tr><td class="time">~20:00</td><td>Bentenchō → Namba <span class="what">neighborhood</span> (~20 min)</td></tr>
     <tr><td class="time">Evening <span class="tag t-free">Free</span></td><td class="suggestions"><strong>Ideas:</strong> Dotonbori <span class="what">entertainment district</span>, Amerikamura, Don Quijote <span class="what">discount store</span> (24h). Saturday before Halloween — expect costume crowds</td></tr>
   </table>
   </div>
   <details class="more"><summary></summary>
-  <p class="rule">Nothing needing a long train today. Solaniwa moved here from Monday to free that day for Nara. Verify the Solaniwa ticket-date tier (A–E calendar) for this specific Saturday — weekend pricing runs higher than the weekday figure quoted earlier.</p>
+  <p class="rule">Nothing needing a long train today. Verify the Solaniwa ticket-date tier (A–E calendar) for this specific Saturday — weekend pricing runs higher than the weekday figure quoted earlier.</p>
   <div class="note">
-    <strong>Solaniwa, verified:</strong> Tatami ¥12,100 / Standard ¥8,800 per room per <strong>90 min</strong> (not 2h). Tatami + Standard = ¥20,900, cheaper than two tatami (¥24,200) and still covers 7.
+    <strong>Solaniwa, updated for 5 people:</strong> One Deluxe Tatami room (up to 6) now covers everyone — the second Standard room is no longer needed. ¥12,100 per room per <strong>90 min</strong> (not 2h), split 5 ways.
     Entry ¥2,310–3,630 depending on the A–E date calendar, + ¥150 bath tax — likely at the higher end for a Saturday.
-    <strong>≈ ¥5,450–5,800+ per person, roughly 1,800–2,000+ EGP.</strong>
+    <strong>≈ ¥4,880–6,200 per person, roughly 1,600–2,050 EGP.</strong> Cheaper per head than the old 7-person two-room math.
     Entry includes yukata, towels and the whole complex — public baths, garden, food stalls, festival games. Private baths 11:00–22:00, last entry 20:00.
-    Book the two rooms for the same slot now.
+    Book one room for the slot now.
   </div>
   </details>
 </div>
 
 <div class="card">
   <div class="day">Sun 25 Oct</div>
-  <div class="loc">Kobe — adventuring, loose</div>
-  <div class="scroll">
-  <table>
-    <tr><td class="time">~10:00</td><td>Osaka → Sannomiya <span class="what">station / area</span>, JR Special Rapid, 20 min, ¥420</td></tr>
-    <tr><td class="time">All day <span class="tag t-free">Free</span></td><td class="suggestions">Nothing booked, deliberately. <strong>Ideas:</strong> Nankinmachi <span class="what">Chinatown</span>, Meriken Park <span class="what">harbour park</span>, Kitano-cho <span class="what">historic district</span>, Nunobiki Herb Garden <span class="what">garden / ropeway</span>, Kobe Mosque <span class="what">mosque</span> (oldest in Japan, 1935)</td></tr>
-    <tr><td class="time">Food <span class="tag t-free">Free</span></td><td class="suggestions">Decide when there — no restaurant booked, including lunch. HalalNavi for whatever's nearby</td></tr>
-    <tr><td class="time">By 17:30</td><td>Leave Sannomiya → Namba <span class="what">neighborhood</span> ~18:00. Drift to 19:00 is fine</td></tr>
-    <tr><td class="time">Evening <span class="tag t-free">Free</span></td><td class="suggestions">Dinner in Osaka, then the evening is yours</td></tr>
-  </table>
-  </div>
-  <details class="more"><summary></summary>
-  <p class="rule">Set a meeting point in advance — with 7 people, "leaving at 17:30" means the 18:00 train otherwise. Skipping Mt Rokko's night view is the tradeoff; it'd cost the Osaka evening. Sunday nights in Osaka are quieter than Saturday anyway, so drifting later isn't expensive. Sakura (Kobe beef teppan) dropped as a fixed booking — decide on arrival instead, though note it's small and halal-only, so it may not take walk-ins for 7.</p>
-  </details>
-</div>
-
-<div class="card">
-  <div class="day">Mon 26 Oct</div>
-  <div class="loc">Osaka — Nara <span class="what">city</span>, then kaiseki</div>
+  <div class="loc">Nara <span class="what">city</span></div>
   <div class="scroll">
   <table>
     <tr><td class="time">~09:00</td><td>Depart Namba → Kintetsu Nara <span class="what">station</span>, Limited Express (~34–45 min, direct, no transfer)</td></tr>
     <tr><td class="time">~09:45–14:00</td><td><strong>Nara — 5-hour block.</strong> Nara Park <span class="what">park</span> (deer, free, never closes), Tōdai-ji <span class="what">temple</span>, Kasuga Taisha <span class="what">shrine</span>, Nara-machi <span class="what">old town district</span></td></tr>
     <tr><td class="time">~14:00</td><td>Return to Osaka (~40 min)</td></tr>
-    <tr><td class="time">14:45–17:00 <span class="tag t-free">Free</span></td><td class="suggestions"><strong>Ideas:</strong> Shinsaibashi-suji <span class="what">shopping arcade</span>, Den Den Town <span class="what">electronics district</span>, Doguyasuji <span class="what">kitchen tools street</span>, or Tenjinbashisuji <span class="what">shopping arcade</span> solo</td></tr>
-    <tr><td class="time">~17:00</td><td>Namba → Hankyu Umeda <span class="what">station</span> → Jūsō <span class="what">station</span>. ~20–25 min</td></tr>
-    <tr><td class="time">Evening</td><td><strong>KADEN</strong> <span class="what">restaurant</span> <span class="tag t-open">To book</span></td></tr>
+    <tr><td class="time">Afternoon <span class="tag t-free">Free</span></td><td class="suggestions">Back in Osaka from mid-afternoon, nothing planned</td></tr>
+    <tr><td class="time">Food <span class="tag t-free">Free</span></td><td class="suggestions">Decide when there — no restaurant booked. HalalNavi for whatever's nearby</td></tr>
+    <tr><td class="time">Evening <span class="tag t-free">Free</span></td><td class="suggestions">Dinner in Osaka, then the evening is yours</td></tr>
   </table>
   </div>
   <details class="more"><summary></summary>
-  <p class="rule"><strong>Nara moved here from Kyoto's Thursday</strong> — Osaka Namba to Kintetsu Nara is direct and just as fast as Kyoto's route, so no travel penalty. The 5h figure above is the full out-and-back block; on-the-ground time in Nara itself is closer to 3.5–4h once transit is subtracted. Say if you meant 5h at Nara specifically rather than door-to-door — easy to shift.</p>
-  <p class="rule"><strong>This frees up Kyoto's Thursday</strong> almost entirely, since Nara was its main content. Fushimi Inari's solo dawn slot needs a decision too — it was riding along the same line as Nara for free; without Nara there, it either stays as its own standalone Kyoto morning or moves. Not decided yet — see "Still open."</p>
-  <p class="rule">Sakai knife workshop dropped — ¥17,000–50,000 for finishing stages only, Japanese-only without an interpreter, 4h round trip, and a knife can't go in carry-on. Buy one at Doguyasuji in Namba instead if you want the blade.</p>
+  <p class="rule">The 5h figure above is the full out-and-back block; on-the-ground time in Nara itself is closer to 3.5–4h once transit is subtracted. Kobe was previously considered for this day too — see "Unplaced," it's parked for now rather than squeezed in alongside Nara.</p>
   </details>
+</div>
+
+<div class="card">
+  <div class="day">Unplaced <span class="tag t-warn">Needs a day</span></div>
+  <div class="loc">Kobe — parked for now</div>
+  <ul>
+    <li><strong>Kobe</strong> <span class="what">city</span> — loose/adventuring day as previously planned. Nankinmachi Chinatown, Meriken Park, Kitano-cho, Nunobiki Herb Garden, Kobe Mosque. ~20 min from Osaka by JR Special Rapid. Revisit once the rest of the schedule settles</li>
+  </ul>
+  <p class="rule">Kobe was Sunday's original plan before Nara took that slot. Options: fit into whatever's left of Osaka, move into the new Kyoto block (26–28), the blank Fri 30 in Tokyo, or drop it. Not decided — your call.</p>
+  <p class="rule"><strong>KADEN dropped entirely.</strong> No more booked dinner anchor in Osaka — looking for something that doesn't need a reservation instead.</p>
 </div>
 
 <div class="card">
@@ -287,16 +287,16 @@
   <div class="loc">Central base, transport, food</div>
   <ul>
     <li><strong>From the Airbnb</strong>: Ginkaku-ji <span class="what">temple</span> / Philosopher's Path <span class="what">walking path</span> ~15–20 min walk · Kyoto Station ~20–25 min bus/subway · Gion <span class="what">geisha district</span> / downtown ~20–25 min · no train-schedule risk anywhere in the city</li>
-    <li><strong>The area leans on buses</strong> more than subway — check the walk to the nearest Karasuma Line subway station rather than assuming. Buses can be slow and crowded; split into two taxis for 7 when a bus looks packed</li>
+    <li><strong>The area leans on buses</strong> more than subway — check the walk to the nearest Karasuma Line subway station rather than assuming. Buses can be slow and crowded; one taxi comfortably fits 5 if a bus looks packed</li>
     <li><strong>Kashikiri is unresolved again</strong> — Yunohana Onsen <span class="what">bathhouse</span> was the Kameoka answer and is no longer convenient. Kurama Onsen <span class="what">bathhouse</span> (30 min, Eizan Railway from Demachiyanagi) is the nearby option but communal only, ¥1,000 outdoor / ¥2,500 both, towel and yukata included</li>
     <li><strong>Halal clusters</strong>: Kyoto Station / Shimogyo (Ayam-Ya Karasuma <span class="what">restaurant</span> — Kyoto Halal Council certified, separate kitchen; Le Temps <span class="what">restaurant</span> at Hotel Granvia — halal manager on site, good for groups), Nakagyo / Kawaramachi (5W, KYOTO PANGA, HALRA, Honolu Nishiki <span class="what">restaurants</span>), Gion-Higashiyama (GYUMON <span class="what">restaurant</span>), Arashiyama (Wagyu Volcano OAGARI <span class="what">restaurant</span> — fewer options)</li>
-    <li><strong>Tankuma</strong> <span class="what">restaurant</span> — certified halal kaiseki, 1 Michelin star, weekday evenings easier. Base course price still unknown. Decision open: worth it alongside KADEN and the steak night?</li>
+    <li><strong>Tankuma</strong> <span class="what">restaurant</span> — certified halal kaiseki, 1 Michelin star, weekday evenings easier. Base course price still unknown. With KADEN dropped, this could be the one proper sit-down kaiseki of the trip rather than a second one alongside it</li>
     <li><strong>No red maples.</strong> JMC 2026 forecast: Kyoto peaks ~Dec 11. Six weeks early — expect green and gold</li>
   </ul>
 </div>
 
 <div class="card">
-  <div class="day">Tue 27 Oct</div>
+  <div class="day">Mon 26 Oct</div>
   <div class="loc">Kyoto — arrive, east then central. Airbnb is <strong>central</strong> (near Ginkaku-ji <span class="what">temple</span> / Philosopher's Path <span class="what">walking path</span>)</div>
   <div class="scroll">
   <table>
@@ -315,7 +315,7 @@
 </div>
 
 <div class="card">
-  <div class="day">Wed 28 Oct</div>
+  <div class="day">Tue 27 Oct</div>
   <div class="loc">Monkey park + Toei, then the two group asks — bamboo grove/Tenryu-ji/bridge skipped</div>
   <div class="scroll">
   <table>
@@ -325,22 +325,22 @@
     <tr><td class="time">13:15–15:00</td><td><strong>Optional:</strong> <strong>Toei Kyoto Studio Park</strong> <span class="what">theme park / film set</span> — Randen tram from Arashiyama, ~10 min, ¥250. Working jidaigeki film set, samurai/ninja performances, Evangelion Kyoto Base, a Kyudojo archery range. 2026 renovation (rebranded Uzumasa Kyoto Village) extended hours to 21:00 — verify current hours before going. ~¥2,200–2,800 entry</td></tr>
     <tr><td class="time">~15:15</td><td>Toward Sakyo Ward for kendo</td></tr>
     <tr><td class="time">~16:00–18:00</td><td><strong>Experience KENDO</strong> <span class="what">activity / dojo</span> <span class="tag t-open">Book now</span> — Kyoto Budo Center, Shōgoin, Sakyo Ward. Near the Airbnb, not downtown. Instructor Tomoyoshi Yamanaka, great-grandson of a real samurai (Yoshishige Hayashi) — history lecture, armour, basic strikes, then matches against each other. Arrive 30 min early at the main gate. Via Viator, search "Experience KENDO Kyoto"</td></tr>
-    <tr><td class="time">18:00–19:00 <span class="tag t-free">Free</span></td><td class="suggestions">Into downtown Kawaramachi <span class="what">shopping / dining district</span> for dinner — change of area, budget the travel. Nothing planned otherwise</td></tr>
-    <tr><td class="time">~19:30</td><td><strong>Steak</strong> — 5W Wagyu <span class="what">restaurant</span>, Kawaramachi <span class="tag t-open">Book</span></td></tr>
+    <tr><td class="time">18:00–19:00 <span class="tag t-free">Free</span></td><td class="suggestions">Into downtown Nakagyo <span class="what">shopping / dining district</span> for dinner — change of area, budget the travel. Nothing planned otherwise</td></tr>
+    <tr><td class="time">~19:30</td><td><strong>Dinner</strong> — Kyoto Diner <span class="what">restaurant</span>, Nakagyo <span class="tag t-open">Book</span></td></tr>
   </table>
   </div>
   <details class="more"><summary></summary>
   <p class="rule"><strong>Honest flag:</strong> monkey park + Toei Studio Park + kendo + dinner is still four things across the city in one day, even lighter than before. Toei Studio Park is the one to drop first if it's running long — it's marked optional for exactly this reason. Uzumasa (Toei) to Sakyo Ward (kendo) is a real cross-city trip, roughly 30–40 min, so don't cut it too close to 16:00.</p>
-  <p class="rule">A second kendo option exists near JR Hanazono Station if the Budo Center is full, run by a small team rather than one instructor. Kyoto Diner <span class="what">bar / restaurant</span> is out regardless: Italian wine bar, tripe on the menu, full bar.</p>
+  <p class="rule">A second kendo option exists near JR Hanazono Station if the Budo Center is full, run by a small team rather than one instructor.</p>
   </details>
 </div>
 
 <div class="card">
-  <div class="day">Thu 29 Oct</div>
+  <div class="day">Wed 28 Oct</div>
   <div class="loc">Kyoto — mostly open. Fushimi Inari at dawn, Tōji <span class="what">temple</span> to close</div>
   <div class="scroll">
   <table>
-    <tr><td class="time">~06:00</td><td><strong>Fushimi Inari</strong> <span class="what">shrine</span> — free, open 24h, no gate. Well before the 07:30 crowd threshold. Solo or group now that it's not racing to meet up for Nara — say which</td></tr>
+    <tr><td class="time">~06:00</td><td><strong>Fushimi Inari</strong> <span class="what">shrine</span> — free, open 24h, no gate. Well before the 07:30 crowd threshold. Solo or group — say which</td></tr>
     <tr><td class="time">~06:15–08:15</td><td>Full 2h summit loop, or shorter if the whole group's coming</td></tr>
     <tr><td class="time">08:15–15:00 <span class="tag t-free">Free</span></td><td class="suggestions">Nearly 7 hours, genuinely open. Kyudo (parked, needs a home) is a candidate — see "Still open". <strong>Ideas, staying low-traffic and close to home:</strong> Shisen-dō <span class="what">temple</span> (quiet Zen garden) and Enkō-ji <span class="what">temple</span> (rock garden), both northern Higashiyama; Yoshida Hill <span class="what">wooded trail</span> behind Kyoto University. All near the Airbnb, none need booking</td></tr>
     <tr><td class="time">~15:00–16:00</td><td><strong>Optional:</strong> <strong>Pokémon Center Kyoto</strong> <span class="what">shop</span> — SUINA Muromachi, Shimogyo-ku, ~8 min from Kyoto Station. Small store (Osaka has two much bigger ones if this matters), but has Kyoto-exclusive Heian-period-costume Pikachu merch. Daily 10:00–20:00. Pairs naturally with Tōji since both are near Kyoto Station</td></tr>
@@ -349,7 +349,7 @@
   </table>
   </div>
   <details class="more"><summary></summary>
-  <p class="rule"><strong>Nara moved to Osaka's Monday.</strong> This day used to be built around it — the daytime block above is now genuinely open. Fill it with Kyudo, more Kyoto wandering, a slower morning, whatever fits once you've decided.</p>
+  <p class="rule">This day used to be built around Nara, which now has its own slot on Sun 25. The daytime block above is genuinely open. Fill it with Kyudo, more Kyoto wandering, a slower morning, whatever fits once you've decided.</p>
   <div class="note">
     <strong>Uji</strong> <span class="what">town</span> — a possible standalone visit if you want one, on the Kintetsu Kyoto Line, Ogura Station, 20–25 min from Kyoto, ¥360. Byōdō-in <span class="what">temple</span> (the Phoenix Hall, UNESCO, the building on the ¥10 coin), Nakamura Tokichi Honten <span class="what">tea house</span> for matcha, and the riverside.
   </div>
@@ -357,69 +357,94 @@
 </div>
 
 <div class="card">
-  <div class="day">Fri 30 Oct</div>
-  <div class="loc">Kyoto → Tsumago <span class="what">post town</span>, two tracks — decide on the day</div>
+  <div class="day">Thu 29 Oct</div>
+  <div class="loc">Kyoto → Tokyo. No more Nagoya or Tsumago — dropped from the trip entirely</div>
   <div class="scroll">
   <table>
-    <tr><td class="time">~07:30</td><td>Check out, head to Kyoto Station — everyone together</td></tr>
-    <tr><td class="time">~08:00</td><td>Depart Kyoto → Nagoya, Shinkansen (~40 min) — everyone together</td></tr>
-    <tr><td class="time">~08:45</td><td><strong>Split at Nagoya.</strong> Whoever's hiking hands their main bag to a bus-track friend here — daypack only from this point</td></tr>
-    <tr><td class="time" colspan="2"><strong>Hiking track</strong> (only if a non-hiking friend is confirmed to carry bags)</td></tr>
-    <tr><td class="time">~08:45–09:35</td><td>Shinano Limited Express, Nagoya → Nakatsugawa <span class="what">station</span> (~50 min)</td></tr>
-    <tr><td class="time">~09:35–10:00</td><td>Bus, Nakatsugawa → Magome <span class="what">post town</span> (~25 min)</td></tr>
-    <tr><td class="time">~10:00–13:00</td><td><strong>Hike, Magome → Tsumago</strong> — 8km, 2.5–3h, over Magome Pass. Daypack only, no info-center forwarding needed since bags travel with the bus track instead</td></tr>
-    <tr><td class="time" colspan="2"><strong>Bus-only track</strong> (carries all bags — this is the default if the hike doesn't happen)</td></tr>
-    <tr><td class="time">~08:45–10:30</td><td>Nagoya → Nagiso <span class="what">station</span> (Shinano Limited Express + local transfer, ~1h45)</td></tr>
-    <tr><td class="time">~10:30–10:45</td><td>Bus, Nagiso → Tsumago (~10 min)</td></tr>
-    <tr><td class="time">~11:00</td><td>Arrive Tsumago early — explore, wait for the hikers</td></tr>
-    <tr><td class="time" colspan="2"><strong>Converge</strong></td></tr>
-    <tr><td class="time">~13:00–13:30</td><td>Hikers arrive, reunite with the bus group, check into the ryokan together</td></tr>
-    <tr><td class="time">Afternoon</td><td><strong>Tsumago itself — no bookings needed.</strong> Honjin (¥300) and Waki-honjin (¥600), both 9:00–17:00, walk-up. Kotokuji Temple's nightingale floors, the castle ruins for a view over town, gohei-mochi and soba on the main street. All pay-on-arrival</td></tr>
-    <tr><td class="time">Evening</td><td>Dinner at the ryokan — Tsumago has no nearby restaurants, meals are booked with the room</td></tr>
+    <tr><td class="time">Morning <span class="tag t-free">Free</span></td><td class="suggestions">Check out whenever the Airbnb requires. Last Kyoto morning, nothing planned — Fushimi Inari again, breakfast somewhere nice, or just pack</td></tr>
+    <tr><td class="time">Midday</td><td>Shinkansen, Kyoto → Tokyo (~2h15, direct, no Nagoya stopover needed for this leg — Nozomi runs straight through)</td></tr>
+    <tr><td class="time">Afternoon</td><td>Arrive Tokyo, to the Airbnb in Shimo <span class="what">neighborhood</span></td></tr>
+    <tr><td class="time">Evening <span class="tag t-free">Free</span></td><td class="suggestions">Settle in, no travel pressure — you're not racing to catch anything the next day anymore</td></tr>
   </table>
   </div>
   <details class="more"><summary></summary>
-  <p class="rule"><strong>Default assumption is bus-only for everyone.</strong> The hike only happens if at least one non-hiking friend is confirmed to carry the hiker's bag on the bus track — decide this at Nagoya, not before. If nobody wants to skip the hike, plan for the worst case and take buses only.</p>
-  <p class="rule">This also means the official Magome baggage-forwarding service (info center, ¥500–1,000/item, 11:30 cutoff) isn't needed anymore — a friend carrying the bag directly is safer than leaving it with a tourist center, and removes the timing pressure that used to gate the hike.</p>
-  <p class="rule"><strong>Leaving Tsumago is bus only, no exit hike</strong> — confirmed, see Sat 31.</p>
-  <p class="rule"><strong>Kyudo pulled from this day</strong> — parked, not dropped. Revisit once Kyoto's other days are settled. See "Still open."</p>
-  <p class="rule"><strong>Ryokan booking, Tsumago</strong> <span class="what">note</span> — most inns here don't use normal booking platforms. Routes that work: JapaneseGuesthouses.com (English-language agency built for exactly this); phoning the Nagiso Tourism Association, who'll call the proprietor directly; or calling an inn yourself. <strong>Matsushiroya Ryokan</strong>, 8 rooms / up to 25 guests, the one sized for a group of 7–8 — +81 264 57 3022, owner speaks "just enough English." Cash-only is common; confirm before booking. Small inns often take one party a night, so book soon rather than assuming availability.</p>
+  <p class="rule"><strong>Tsumago, the hike, the ryokan, the two-track bag logistics — all removed.</strong> This day is now just a normal travel day between cities, nothing more. Kyudo (archery, previously considered for this slot) is still parked with no day assigned.</p>
+  </details>
+</div>
+
+<div class="card">
+  <div class="day">Fri 30 Oct</div>
+  <div class="loc">Nikko <span class="what">UNESCO town + mountain lake</span> — day trip from Tokyo</div>
+  <div class="scroll">
+  <table>
+    <tr><td class="time">~07:00–07:30</td><td>Depart Asakusa — <strong>Tobu Limited Express</strong>, direct, ~1h50, ~¥2,800–3,200. No JR Pass coverage on Tobu, not that it matters here</td></tr>
+    <tr><td class="time">~09:00–09:30</td><td>Arrive Tobu-Nikko <span class="what">station</span></td></tr>
+    <tr><td class="time">09:30–11:30</td><td><strong>Tōshōgū Shrine</strong> <span class="what">shrine / mausoleum</span> — UNESCO World Heritage, ornately decorated, Tokugawa Ieyasu's mausoleum. Worth it regardless of foliage timing</td></tr>
+    <tr><td class="time">~11:30</td><td><strong>Shinkyo Bridge</strong> <span class="what">bridge</span> — quick roadside stop</td></tr>
+    <tr><td class="time">~12:00–13:00</td><td>Bus up to <strong>Lake Chuzenji / Chuzenji Onsen</strong> <span class="what">lake</span>, via the Irohazaka hairpin road</td></tr>
+    <tr><td class="time">13:00–14:30</td><td>Lakeside, lunch</td></tr>
+    <tr><td class="time">14:30–16:00</td><td><strong>Kegon Falls</strong> <span class="what">waterfall</span> — elevator down to the basin viewpoint</td></tr>
+    <tr><td class="time">~16:30</td><td>Bus back down to Nikko town</td></tr>
+    <tr><td class="time">~17:00–18:30</td><td>Train back to Asakusa, Tobu Limited Express</td></tr>
+  </table>
+  </div>
+  <details class="more"><summary></summary>
+  <p class="rule"><strong>Foliage timing lines up well.</strong> Nikko has three vertical peaks by elevation: Oku-Nikko is past peak by late Oct, but Lake Chuzenji/Kegon Falls peaks exactly Oct 18–Nov 1 — this trip sits right in that window. The town/Toshogu area itself peaks early-to-mid November, so don't expect color there, just the shrine itself. One forecaster has the Irohazaka road peaking right around Oct 31, a day after this trip.</p>
+  <p class="rule">Oct 30 is a Friday, which helps with the Irohazaka traffic that gets bad on peak-color weekends. Still, don't linger too long in Nikko town before heading up.</p>
   </details>
 </div>
 
 <div class="card">
   <div class="day">Sat 31 Oct</div>
-  <div class="loc">Tokyo — Halloween. Last day at 7–8, Airbnb in Shimo. Departs from <strong>Tsumago</strong>, not Nagoya</div>
+  <div class="loc">Tokyo — Halloween. Last big group night before dropping to 4 on Nov 1</div>
   <div class="scroll">
   <table>
-    <tr><td class="time">~07:30–08:00</td><td>Breakfast at the ryokan, check out. Bus, Tsumago → Nagiso <span class="what">station</span> (~10 min)</td></tr>
-    <tr><td class="time">~08:15</td><td>Nagiso → Nakatsugawa (local transfer) → Nagoya, Shinano Limited Express (~50 min)</td></tr>
-    <tr><td class="time">~09:30</td><td>Depart Nagoya, Nozomi (1h40)</td></tr>
-    <tr><td class="time">~11:15–11:30</td><td>Arrive Tokyo Stn</td></tr>
-    <tr><td class="time">~12:00</td><td>Airbnb, Shimo <span class="what">neighborhood</span> — drop bags, everyone rests</td></tr>
-    <tr><td class="time">12:00–13:30 <span class="tag t-free">Free</span></td><td class="suggestions">Rest, deliberately — real fatigue risk stacking up by this point in the trip</td></tr>
-    <tr><td class="time">13:30–17:00</td><td><strong>Optional, solo:</strong> <strong>Ikebukuro</strong> <span class="what">district</span> Halloween Cosplay Festival — ~20 min direct on the Namboku Line. Runs 10:00–18:00, stage events end 16:30, parade time unconfirmed (organizers don't publish it in advance, historically). Free to watch. Group can join if anyone else wants it; otherwise they rest</td></tr>
-    <tr><td class="time">17:00–19:30 <span class="tag t-free">Free</span></td><td class="suggestions">Gap before dinner, unplanned</td></tr>
-    <tr><td class="time">~19:30</td><td><strong>Regroup for dinner</strong>, halal — meeting point wherever's convenient, not necessarily the Airbnb</td></tr>
-    <tr><td class="time">Night</td><td><strong>Shimokita Halloween '26</strong> <span class="what">party</span>, Shimokitazawa — confirmed for tonight, all night, two venues, DJs and live acts. ~40–45 min from Shimo. Leave whenever, no all-nighter forced</td></tr>
+    <tr><td class="time">Morning <span class="tag t-free">Free</span></td><td class="suggestions">Recovery after Nikko the day before</td></tr>
+    <tr><td class="time">Midday</td><td><strong>Senso-ji + Nakamise Street</strong> <span class="what">temple</span>, Asakusa — free, no booking, Tokyo's oldest temple. You'll likely already be near here coming back from Nikko</td></tr>
+    <tr><td class="time">Early afternoon</td><td>Move toward Roppongi/Azabudai (~30–40 min from Asakusa)</td></tr>
+    <tr><td class="time">14:00–17:00</td><td><strong>teamLab Borderless</strong> <span class="what">digital art museum</span> <span class="tag t-open">Book now</span> — Azabudai Hills, Minato. Timed entry, sells out especially on Saturdays. ¥3,800–4,800. 2–3h, no fixed route, 50+ rooms. Confirm 5 can book the same slot</td></tr>
+    <tr><td class="time">17:00–20:00 <span class="tag t-free">Free</span></td><td class="suggestions">Gap between Borderless and dinner — wander Azabudai Hills, rest, or kill time around Roppongi</td></tr>
+    <tr><td class="time">20:00</td><td><strong>Dinner — Gonpachi Nishi-Azabu</strong> <span class="what">restaurant</span> <span class="tag t-open">Book</span> — "the Kill Bill restaurant," the model location for the Crazy 88 fight scene in Tarantino's film, also hosted the Bush–Koizumi "Izakaya Summit." Short walk from Borderless. ~¥4,000–6,000pp, izakaya menu (skewers, soba, grilled dishes) — easy to keep pork-free, no alcohol required. Book at gonpachi.jp/nishi-azabu/ (English, real-time availability) or +81 3-5771-0170. Book now — Saturday, sells out</td></tr>
+    <tr><td class="time">Night</td><td><strong>Shimokita Halloween '26</strong> <span class="what">party</span>, Shimokitazawa — confirmed for tonight, all night, two venues, DJs and live acts. Leave whenever, no all-nighter forced</td></tr>
   </table>
   </div>
   <details class="more"><summary></summary>
-  <p class="rule">This stacks up: a full travel day the day before (possibly plus a hike), travel from Tsumago (longer than Nagoya alone — bus, two train transfers, Shinkansen), a party at night — real fatigue risk either way. Resting at the Airbnb first is the fix; Ikebukuro is now the flexible piece, not a fixed group stop. Ticket only needed to cosplay/shoot/use changing rooms (¥2,980–3,980 adv) — not needed just to watch.</p>
-  <p class="rule">Times above assume a smooth first bus out of Tsumago — confirm the actual Tsumago→Nagiso morning bus schedule before locking this in, since a missed connection pushes everything later.</p>
-  <p class="rule"><strong>Shibuya's photo stop got cut</strong> to make room for the rest — say if you want it back in, it'd sit between regroup and dinner (~18:30–19:00, ~30 min from Shimo).</p>
+  <p class="rule">This day got much easier with the restructure — the old version was built around a stressful early dash from Tsumago. Now you're already in the city, so the whole day is flexible rather than racing a clock.</p>
+  <p class="rule">Ikebukuro's Halloween Cosplay Festival was the original anchor here but got replaced — Senso-ji/Borderless/Gonpachi was the preferred version. Shibuya's photo stop also dropped for the same reason.</p>
   <p class="rule">Other party options considered: Sanrio Puroland <span class="what">theme park</span> all-nighter 22:00–05:00 (Tama, 20+, forces staying to first train), Tachikawa Yōkai Bon Odori <span class="what">event</span> (¥5,000 adv, costume required), Decadance <span class="what">venue</span> in Kabukichō (date unconfirmed). Shimokita won this on confirmed date + being easy to leave early.</p>
   </details>
 </div>
 
 <div class="card">
-  <div class="day">Sun 1 – Sun 8 Nov <span class="tag t-open">Not planned</span></div>
-  <div class="loc">Tokyo. Depart ~01:00 on the 9th</div>
+  <div class="day">Sun 1 Nov</div>
+  <div class="loc">Tokyo — last morning at 5, group drops to 4, moving base to Sumida-ku</div>
+  <div class="scroll">
+  <table>
+    <tr><td class="time">08:00–09:30 <span class="tag t-free">Free</span></td><td class="suggestions"><strong>Group breakfast</strong> — one last meal together before 2 friends leave. Options to pick from on the day, nothing booked: <strong>iki ESPRESSO</strong> in Kiyosumi-Shirakawa, or <strong>Coffee Dojo Samurai</strong> in Kameido. Worth rechecking against the real second Airbnb location below — these were researched around Koto City, but the actual address is Sumida-ku</td></tr>
+    <tr><td class="time">09:30–11:00</td><td>Pack, finish up at the Shimo Airbnb</td></tr>
+    <tr><td class="time">~11:00</td><td><strong>Checkout — everyone together.</strong> This is also where the group splits: one friend heads to the airport for a 2pm flight (~3h buffer), the remaining 4 move bags onward</td></tr>
+    <tr><td class="time">11:00 onward</td><td><strong>Remaining 4:</strong> move to the second Airbnb — Ishiwara, Sumida-ku, near Kuramae / Ryōgoku, by the Sumida River. Travel time from Shimo not yet confirmed, estimate ~30–40 min with one transfer</td></tr>
+    <tr><td class="time">Afternoon</td><td><strong>Akihabara</strong> <span class="what">district</span> — ~5–7 min direct train from Ginza, so pairs easily into one day. Ideas, excluding shopping: <strong>GiGO's VR room</strong> (immersive VR, shooting games, solo or multiplayer), a <strong>maid cafe</strong> (Maid Dreamin', Magical Lollipop, RABBIT CASTLE, RONRON), <strong>Kanda Myojin Shrine</strong> (~1,300 years old, lit up well at dusk, free, a quiet contrast to the neon), Gachapon Kaikan (capsule toy hall, more experience than shopping)</td></tr>
+    <tr><td class="time">Early evening</td><td><strong>Ginza</strong> <span class="what">district</span> — 5–7 min direct JR train from Akihabara. Ginza Sony Park if there's still appetite, free, no booking, casual</td></tr>
+  </table>
+  </div>
   <details class="more"><summary></summary>
-  <p class="rule"><strong>Hakone</strong> <span class="what">resort town</span> belongs here — peaks early November, which is exactly this window, and riverside kashikiri baths are the local specialty. The only point in the trip where autumn colour and your dates line up. Fuji Five Lakes / Kawaguchiko <span class="what">lake resort area</span> is the alternative.</p>
-  <p class="rule">Otherwise parked for later. Solo-leaning ideas noted: Yanaka <span class="what">old town district</span>, Kanda-Jimbōchō <span class="what">bookshop district</span>, Shimokitazawa <span class="what">district</span>, Nezu Museum <span class="what">museum</span>, Kiyosumi Teien <span class="what">garden</span>, Toyosu Market <span class="what">fish market</span> (advance lottery), teamLab Borderless / Planets <span class="what">digital art museums</span> (timed entry).</p>
+  <p class="rule">Which airport the departing friend flies from (Haneda vs Narita) changes how comfortable the 11am–2pm window is — Narita needs more runway. Worth confirming.</p>
+  <p class="rule">Kuramae/Ryōgoku itself is also worth a wander some other day: craft and artisan shops, Ryōgoku Kokugikan (sumo stadium), Edo-Tokyo Museum, Single O Ryōgoku Roastworks/Cafe right by the new place</p>
   </details>
 </div>
+
+<div class="card">
+  <div class="day">Mon 2 – Sun 8 Nov <span class="tag t-open">Not planned</span></div>
+  <div class="loc">Tokyo, now at 4, based in Ishiwara, Sumida-ku (Kuramae/Ryōgoku area). Depart ~01:00 on the 9th</div>
+  <details class="more"><summary></summary>
+  <p class="rule"><strong>Hakone</strong> <span class="what">resort town</span> belongs here — peaks early November, which is exactly this window, and riverside kashikiri baths are the local specialty. The only point in the trip where autumn colour and your dates line up. Fuji Five Lakes / Kawaguchiko <span class="what">lake resort area</span> is the alternative.</p>
+  <p class="rule">Otherwise parked for later. Solo-leaning ideas noted: Yanaka <span class="what">old town district</span>, Kanda-Jimbōchō <span class="what">bookshop district</span>, Shimokitazawa <span class="what">district</span>, Nezu Museum <span class="what">museum</span>, Kiyosumi Teien <span class="what">garden</span>, Toyosu Market <span class="what">fish market</span> (advance lottery). teamLab Planets (Toyosu) still uncovered — Borderless is already done on Oct 31.</p>
+  </details>
+</div>
+
+<details class="appendix">
+<summary>Reference tables, rules &amp; open questions</summary>
 
 <h2>Osaka — free time at a glance</h2>
 <div class="scroll">
@@ -427,8 +452,8 @@
   <tr><th>Day</th><th>Window</th><th>Length</th></tr>
   <tr><td>Sat 24</td><td>Early–mid afternoon</td><td>3–6h, depends on the Shinkansen arrival</td></tr>
   <tr><td>Sat 24</td><td>Evening (from ~20:00)</td><td>After Solaniwa — Dotonbori, Amerikamura</td></tr>
-  <tr><td>Sun 25</td><td>All day</td><td><strong>Nothing booked at all</strong> — Kobe is fully loose, including food</td></tr>
-  <tr><td>Mon 26</td><td>14:45–17:00</td><td>~2h, back from Nara, before heading to KADEN</td></tr>
+  <tr><td>Sun 25</td><td>From ~14:00</td><td>Back from Nara mid-afternoon, nothing planned for the rest of the day</td></tr>
+  <tr><td colspan="3"><em>Osaka is now just these two days — Kobe is unplaced. See the "Unplaced" card.</em></td></tr>
 </table>
 </div>
 <p class="rule">Everything tagged <span class="tag t-free">Free</span> in the day-by-day below is genuinely open — the ideas listed next to it are suggestions, not a plan. Only <span class="tag t-open">To book</span> items need a reservation.</p>
@@ -444,7 +469,7 @@
 <p class="rule">Shops close 20:00–21:00. After that it's food, arcades and Donki only. Daytime sights (Osaka Castle, temples) close ~17:00. Sunset ~16:50. Last trains ~00:00.</p>
 
 <h2>Kyoto — works alone or with the group</h2>
-<p class="rule">Places flex, bookings don't. The samurai class, Solaniwa's rooms and KADEN are built around a headcount. Everything below can go either way depending on who's up.</p>
+<p class="rule">Places flex, bookings don't. The samurai class and Solaniwa's rooms are built around a headcount. Everything below can go either way depending on who's up.</p>
 <div class="scroll">
 <table>
   <tr><th></th><th>Alone</th><th>With the seven</th></tr>
@@ -467,13 +492,13 @@
 <div class="scroll">
 <table>
   <tr><th>Day</th><th>Window</th><th>Length</th></tr>
-  <tr><td>Tue 27</td><td>13:00–16:30</td><td>3.5h, central — Nishiki, arcades, lunch</td></tr>
-  <tr><td>Tue 27</td><td>17:00–21:00</td><td>4h — dinner in Gion fits here</td></tr>
-  <tr><td>Tue 27</td><td>After 23:00</td><td>Open-ended — no last-train constraint from here</td></tr>
-  <tr><td>Wed 28</td><td>Morning</td><td>Freed up by dropping the bamboo grove/Tenryu-ji/bridge</td></tr>
-  <tr><td>Wed 28</td><td>18:00–19:00</td><td>1h before dinner</td></tr>
-  <tr><td>Thu 29</td><td>08:15–15:00</td><td><strong>~7h, the big one.</strong> Nara moved to Monday, so most of this day is unplanned</td></tr>
-  <tr><td>Thu 29</td><td>16:00–18:00</td><td>2h before Tōji</td></tr>
+  <tr><td>Mon 26</td><td>13:00–16:30</td><td>3.5h, central — Nishiki, arcades, lunch</td></tr>
+  <tr><td>Mon 26</td><td>17:00–21:00</td><td>4h — dinner in Gion fits here</td></tr>
+  <tr><td>Mon 26</td><td>After 23:00</td><td>Open-ended — no last-train constraint from here</td></tr>
+  <tr><td>Tue 27</td><td>Morning</td><td>Freed up by dropping the bamboo grove/Tenryu-ji/bridge</td></tr>
+  <tr><td>Tue 27</td><td>18:00–19:00</td><td>1h before dinner</td></tr>
+  <tr><td>Wed 28</td><td>08:15–15:00</td><td><strong>~7h, the big one.</strong> Mostly unplanned — could be where Kobe lands, see the "Unplaced" card</td></tr>
+  <tr><td>Wed 28</td><td>16:00–18:00</td><td>2h before Tōji</td></tr>
 </table>
 </div>
 <p class="rule">Everything tagged <span class="tag t-free">Free</span> in the day-by-day below is genuinely open — the ideas listed next to it are suggestions, not a plan. Only <span class="tag t-open">To book</span> items need a reservation.</p>
@@ -482,11 +507,10 @@
 <div class="scroll">
 <table>
   <tr><th>Day</th><th>Leave</th><th>Driven by</th></tr>
-  <tr><td>Tue 27</td><td>Osaka ~08:30</td><td>Kiyomizu-dera by 10:00, mornings are quieter</td></tr>
-  <tr><td>Wed 28</td><td>Airbnb ~09:30</td><td>Arashiyama, then the monkey park before it gets busy</td></tr>
-  <tr><td>Thu 29</td><td>~06:00 for Fushimi Inari</td><td>No longer time-pressured to meet a group Nara trip — solo or together, up to you</td></tr>
+  <tr><td>Mon 26</td><td>Osaka ~08:30</td><td>Kiyomizu-dera by 10:00, mornings are quieter</td></tr>
+  <tr><td>Tue 27</td><td>Airbnb ~09:30</td><td>Arashiyama, then the monkey park before it gets busy</td></tr>
+  <tr><td>Wed 28</td><td>~06:00 for Fushimi Inari</td><td>No group logistics to coordinate around — solo or together, up to you</td></tr>
 </table>
-</div>
 </div>
 
 <h2>Kyoto — what things cost</h2>
@@ -513,30 +537,34 @@
 
 <h2>Rules</h2>
 <ul>
+  <li><strong>Group size: 5 from Oct 23, down to 4 from Nov 1.</strong> Everything through Oct 31 is planned for 5. The Nov 1–8 Tokyo block, still unplanned, should be built around 4</li>
   <li><strong>Food:</strong> group meals stay halal-certified. Solo meals = no pork, ideally no alcohol</li>
-  <li><strong>Split into 3–4</strong> for anything unbooked — table size is what kills walk-ins, not demand</li>
+  <li><strong>Table size matters less now.</strong> At 5 (and later 4), most walk-ins just work — the old "split into smaller groups" advice was built around a party of 7</li>
   <li><strong>One anchor per day, max.</strong> Prefer lunch anchors; a booked dinner constrains the whole afternoon</li>
-  <li><strong>Solo time = early mornings.</strong> 7 guys won't move before 10:00. That's 06:00–10:00 free, every day</li>
+  <li><strong>Solo time = early mornings.</strong> The group won't move before 10:00. That's 06:00–10:00 free, every day</li>
   <li>HalalNavi for same-day food lookups</li>
   <li><strong>Free time is tagged, not left blank.</strong> Every open block gets a <span class="tag t-free">Free</span> marker and its length; ideas next to it are suggestions, never a plan. This is the standing convention for every day going forward, city included</li>
 </ul>
 
 <h2>Still open</h2>
 <ul>
+  <li><strong>Kobe — needs a day.</strong> Nara settled on Sun 25; Kobe's still unplaced. See the "Unplaced" card for options</li>
+  <li><strong>Osaka dinner — no reservation needed.</strong> KADEN dropped, looking for a halal spot that takes walk-ins for 5</li>
+
   <li>Solaniwa ticket type for Sat 24 (A–E calendar) — sets the entry fee, weekend likely pricier</li>
   <li>What time the Shinkansen leaves Tokyo on the 24th (decides how much afternoon before Solaniwa)</li>
-  <li>Tankuma — do it at all, given KADEN is already booked? Base course price unknown</li>
+  <li>Tankuma — do it at all? Base course price unknown. More likely now that KADEN's dropped</li>
   <li><strong>Confirm the Airbnb's actual walk to the nearest subway/bus stop</strong> — the pin looks central but "close on the map" isn't always close on foot</li>
-  <li>Experience KENDO uses bamboo swords (shinai) and armour, not live blades, so the earlier real-blade-law concern doesn't apply here — but confirm group size limits for 7 when booking</li>
+  <li>Experience KENDO uses bamboo swords (shinai) and armour, not live blades, so the earlier real-blade-law concern doesn't apply here — 5 should be straightforward to seat in one session</li>
   <li><strong>Kyudo (archery) — parked.</strong> Thursday 29's daytime is now wide open and the obvious candidate</li>
-  <li><strong>Thu 29 daytime — genuinely unplanned</strong> since Nara moved out. Kyudo, more Kyoto, a slow morning — open</li>
-  <li>Whether the 5-hour Nara block on Mon 26 means 5h door-to-door or 5h on the ground (currently planned as door-to-door, ~3.5–4h actual time in Nara)</li>
-  <li><strong>Ryokan booking for Tsumago</strong> — try JapaneseGuesthouses.com or call Matsushiroya directly (+81 264 57 3022). Confirm cash-only and that they can take 7–8</li>
-  <li>Tsumago → Nagiso first morning bus time on the 31st — sets how early the group actually needs to move</li>
+  <li><strong>Wed 28 daytime — genuinely unplanned.</strong> Kyudo, more Kyoto, a slow morning — open, and could also be where Kobe lands</li>
+  <li>Whether the 5-hour Nara figure (now Sun 25) means 5h door-to-door or 5h on the ground — currently ~3.5–4h actual time in Nara if door-to-door</li>
   <li>Shimokita Halloween — ticket/entry details not yet checked</li>
   <li>Tokyo, Nov 1–8 — Hakone goes here</li>
   <li>Whether communal nude bathing is actually a dealbreaker (affects Kurama, since the Kameoka private-bath answer is gone)</li>
 </ul>
+
+</details>
 
 <footer>
   Prices, hours and booking policies shift — confirm directly before committing, especially the 2019–2020 figures on Tankuma's beef courses and Sakura's course pricing.
